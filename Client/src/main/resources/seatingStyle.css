@@ -1,0 +1,26 @@
+.seat {
+    -fx-background-color: #5f021f;
+    -fx-border-color: #cb8e4a;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-background-radius: 7px;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-max-width: 20px;
+    -fx-max-height: 20px;
+    -fx-min-width: 20px;
+    -fx-min-height: 20px;
+}
+
+.seat:focused {
+    -fx-background-color: #8c032d;
+}
+
+.baseButton {
+    -fx-background-color: #5f021f;
+    -fx-border-color: #cb8e4a;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-background-radius: 7px;
+    -fx-text-fill: #f5e3be;
+}

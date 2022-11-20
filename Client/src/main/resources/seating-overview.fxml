@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="de.medieninformatik.client.SeatingController">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5e3be;">
+        <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5e3be;">
+            <center>
+                <GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0"
+                          style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                </GridPane>
+            </center>
+            <top>
+                <Pane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="49.0" prefWidth="200.0"
+                      style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" height="10.0" opacity="0.0"
+                                   stroke="BLACK" strokeType="INSIDE" width="500.0" x="50.0"/>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" prefHeight="49.0"
+                               prefWidth="350.0" text="Nightingale Theatre" textAlignment="CENTER"
+                               textFill="#cb8e4a">
+                            <font>
+                                <Font size="35.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </top>
+            <bottom>
+                <Pane maxHeight="-Infinity" prefHeight="49.0" prefWidth="200.0"
+                      style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="seatingBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0"
+                                layoutY="8.0" lineSpacing="1.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#onReservationClick" prefHeight="35.0" prefWidth="180.0"
+                                style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-width: 2px;"
+                                text="Make a reservation" textAlignment="CENTER" textFill="#f5e3be">
+                            <font>
+                                <Font name="Bookman Old Style" size="16.0"/>
+                            </font>
+                            <padding>
+                                <Insets bottom="1.0"/>
+                            </padding>
+                        </Button>
+                    </children>
+                </Pane>
+            </bottom>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>

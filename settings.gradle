@@ -1,0 +1,5 @@
+rootProject.name = "Prog3_nr7_SeatReservation"
+include 'Client'
+include 'Common'
+include 'Server'
+

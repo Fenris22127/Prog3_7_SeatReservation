@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="de.medieninformatik.client.SeatingController">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5e3be;">
+        <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5e3be;">
+            <center>
+                <GridPane fx:id="seatGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0"
+                          style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="00"
+                            GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="01"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="02"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="03"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="04"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="05"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="06"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="07"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="08"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="09"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="010"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="011"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="012"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="013"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="014"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="015"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="016"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="017"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="018"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="019"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="10"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="11"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="12"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="13"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="14"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="15"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="16"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="17"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="18"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="19"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="110"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="111"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="112"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="113"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="114"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="115"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="116"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="117"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="118"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="119"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="20"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="21"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="22"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="23"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="24"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="25"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="26"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="27"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="28"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="29"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="210"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="211"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="212"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="213"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="214"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="215"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="216"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="217"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="218"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="219"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="30"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="31"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="32"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="33"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="34"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="35"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="36"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="37"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="38"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="39"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="310"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="311"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="312"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="313"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="314"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="315"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="316"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="317"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="318"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="319"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="40"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="41"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="42"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="43"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="44"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="45"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="46"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="47"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="48"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="49"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="410"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="411"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="412"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="413"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="414"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="415"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="416"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="417"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="418"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="419"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="50"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="51"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="52"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="53"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="54"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="55"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="56"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="57"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="58"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="59"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="510"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="511"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="512"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="513"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="514"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="515"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="516"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="517"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="518"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="519"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="60"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="61"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="62"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="63"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="64"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="65"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="66"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="67"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="68"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="69"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="610"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="611"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="612"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="613"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="614"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="615"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="616"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="617"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="618"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="619"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="70"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="71"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="72"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="73"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="74"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="75"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="76"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="77"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="78"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="79"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="710"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="711"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="712"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="713"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="714"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="715"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="716"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="717"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="718"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="719"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="80"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="81"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="82"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="83"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="84"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="85"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="86"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="87"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="88"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="89"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="810"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="811"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="812"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="813"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="814"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="815"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="816"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="817"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="818"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="819"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                            GridPane.valignment="CENTER"/>
+
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="90"
+                            GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="91"
+                            GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="92"
+                            GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="93"
+                            GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="94"
+                            GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="95"
+                            GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="96"
+                            GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="97"
+                            GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="98"
+                            GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="99"
+                            GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="910"
+                            GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="911"
+                            GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="912"
+                            GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="913"
+                            GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="914"
+                            GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="915"
+                            GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="916"
+                            GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="917"
+                            GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="918"
+                            GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                            styleClass="seat" stylesheets="@seatingStyle.css" userData="919"
+                            GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                            GridPane.valignment="CENTER"/>
+                </GridPane>
+            </center>
+            <top>
+                <Pane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="49.0" prefWidth="200.0"
+                      style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" height="10.0" opacity="0.0"
+                                   stroke="BLACK" strokeType="INSIDE" width="500.0" x="50.0"/>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" prefHeight="49.0"
+                               prefWidth="350.0" text="Nightingale Theatre" textAlignment="CENTER"
+                               textFill="#cb8e4a">
+                            <font>
+                                <Font size="35.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </top>
+            <bottom>
+                <Pane maxHeight="-Infinity" prefHeight="49.0" prefWidth="200.0"
+                      style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="seatingBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0"
+                                layoutY="8.0" lineSpacing="1.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#onReservationClick" prefHeight="35.0" prefWidth="180.0"
+                                style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-width: 2px;"
+                                text="Make a reservation" textAlignment="CENTER" textFill="#f5e3be">
+                            <font>
+                                <Font name="Bookman Old Style" size="16.0"/>
+                            </font>
+                            <padding>
+                                <Insets bottom="1.0"/>
+                            </padding>
+                        </Button>
+                    </children>
+                </Pane>
+            </bottom>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>
