@@ -17,27 +17,6 @@ public class ReservierungImpl implements Reservierung {
         }
     }
     @Override
-    public Seat reservierung(int row, int col, String firstN, String lastN) throws RemoteException {
-        for (int r = 0; r < 10; r++) {
-            for (int c = 0; c < 20; c++) {
-                if (seatsArray[r][c] == null) {
-                    //book seat
-                    //seatsArray[r][c] == new Seat(row, col, firstN, lastN, true, )
-                }
-                if (
-                        Objects.requireNonNull(seatsArray[r][c]).getFirstName().equals(firstN) &&
-                        Objects.equals(seatsArray[r][c].getLastName(), lastN)) {
-                    //you already booked this
-                }
-                if (seatsArray[r][c].isBooked()) {
-                    //seat booked
-                }
-            }
-        }
-        return null;
-    }
-
-    @Override
     public void addReservation(int row, int column, String firstName, String lastName) throws RemoteException {
         Seat curr = seatsArray[row][column];
         Objects.requireNonNull(firstName);
@@ -58,8 +37,8 @@ public class ReservierungImpl implements Reservierung {
     }
 
     @Override
-    public String getLastName(int row, int column) throws RemoteException {
-        return seatsArray[row][column].getLastName();
+    public String getName(int row, int column) throws RemoteException {
+        return seatsArray[row][column].getFirstName().concat(" ").concat(seatsArray[row][column].getLastName());
     }
 
     @Override

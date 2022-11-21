@@ -5,23 +5,11 @@ import de.medieninformatik.common.Seat;
 
 import java.rmi.RemoteException;
 
-public class ReservierungClient implements Reservierung{
+public class ReservierungClient implements Reservierung {
     private final Reservierung reservierung;
 
     public ReservierungClient() throws Exception {
         reservierung = ReservierungFactory.getInstance();
-    }
-
-    @Override
-    public Seat reservierung(int row, int col, String firstN, String lastN) throws RemoteException {
-        Seat reserviert = null;
-        try {
-            reserviert = reservierung.reservierung(row, col, firstN, lastN);
-        }
-        catch (RemoteException e) {
-            e.printStackTrace(System.err);
-        }
-        return reserviert;
     }
 
     @Override
@@ -40,8 +28,8 @@ public class ReservierungClient implements Reservierung{
     }
 
     @Override
-    public String getLastName(int row, int column) throws RemoteException {
-        return reservierung.getLastName(row, column);
+    public String getName(int row, int column) throws RemoteException {
+        return reservierung.getName(row, column);
     }
 
     @Override

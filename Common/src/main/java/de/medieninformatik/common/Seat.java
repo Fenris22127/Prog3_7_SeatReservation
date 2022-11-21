@@ -5,7 +5,6 @@ public class Seat {
     private  String lastName;
     private boolean booked;
     public Seat(String firstName, String lastName, boolean booked) {
-
         this.firstName = firstName;
         this.lastName = lastName;
         this.booked = booked;

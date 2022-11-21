@@ -1,6 +1,5 @@
 package de.medieninformatik.client;
 
-import de.medieninformatik.common.Seat;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -10,7 +9,9 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class SeatingReservation extends Application {
     public static Scene scene;
@@ -40,7 +41,7 @@ public class SeatingReservation extends Application {
                 button.getStyleClass().add("seat");
                 int finalRow = row;
                 int finalCol = col;
-                reservierungClient.getLastName(finalRow, finalCol);
+                //reservierungClient.getName(finalRow, finalCol);
                 button.setOnAction(event -> {
                     try {
                        SeatingController.onSeatClick(event, finalRow, finalCol);
@@ -51,8 +52,8 @@ public class SeatingReservation extends Application {
                 addToSeatArray(button, row, col);
                 gridPaneMain.add(button, col, row, 1, 1);
             }
-
         }
+
         primaryStage.show();
     }
 

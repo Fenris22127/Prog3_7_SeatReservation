@@ -45,19 +45,18 @@ public class BookingController {
         int col = Integer.parseInt(numbers[1]);
         try {
             if (!reservierung.isReserved(row, col)) {
-                reservierung.addReservation(row, col, v, l); // TODO: Fehlermeldung einfügen!
+                reservierung.addReservation(row, col, v, l); //TODO: Fehlermeldung einfügen!
                 System.out.println("BookingController: bookSeat() -> Seat booked :" + v + " " + l + " Seat: " + currentlySelected.getAccessibleText());
+                currentlySelected.setStyle("-fx-background-color: #505050");
+                Stage stage = (Stage) cancelButton.getScene().getWindow();
+                stage.close();
             } else {
-                System.out.println("bereits Reserviert");
+                errorLabel.setText("Seat already booked by " + reservierung.getName(row, col));
+                System.out.println("Seat already booked by " + reservierung.getName(row, col));
             }
         } catch (RemoteException e) {
             throw new RuntimeException(e);
         }
-
-
-        //Seat bookedSeat = reservierung.reservierung()
-
-
     }
 
     @FXML

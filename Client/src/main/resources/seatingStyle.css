@@ -24,3 +24,7 @@
     -fx-background-radius: 7px;
     -fx-text-fill: #f5e3be;
 }
+
+.booked {
+    -fx-background-color: #505050;
+}

@@ -26,15 +26,14 @@ public class SeatingController {
 
     }
     @FXML
-    protected static void onSeatClick(ActionEvent e, int finalRow, int finalCol) throws Exception {
+    protected static void onSeatClick(ActionEvent e, int finalRow, int finalCol) {
         currentlySelected = (Node) e.getSource();
         currentlySelected.setAccessibleText(finalRow + " " + finalCol);
-
-
     }
 
     @FXML
     protected void onReservationClick() throws IOException {
+        System.out.println(gridpane.getScene().getWindow());
         FXMLLoader fxmlLoader = new FXMLLoader(SeatingReservation.class.getClassLoader().getResource("booking.fxml"));
         Scene secondScene = new Scene(fxmlLoader.load(), 400, 200);
         Stage secondStage = new Stage();
