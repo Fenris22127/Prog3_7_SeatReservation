@@ -1,6 +1,5 @@
 package de.medieninformatik.client;
 
-import de.medieninformatik.common.Seat;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -47,6 +46,8 @@ public class BookingController {
         try {
             if (!reservierung.isReserved(row, col)) {
                 reservierung.addReservation(row, col, v, l); // TODO: Fehlermeldung einfügen!
+                System.out.println("BookingController: bookSeat() -> Seat booked :" + v + " " + l + " Seat: " + currentlySelected.getAccessibleText());
+            } else {
                 System.out.println("bereits Reserviert");
             }
         } catch (RemoteException e) {
@@ -56,7 +57,7 @@ public class BookingController {
 
         //Seat bookedSeat = reservierung.reservierung()
 
-        System.out.println("BookingController: bookSeat() -> Seat booked :" + v + " " + l + " Seat: " + currentlySelected.getAccessibleText());
+
     }
 
     @FXML
