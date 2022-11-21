@@ -16,16 +16,21 @@ import static de.medieninformatik.client.SeatingReservation.seatBtns;
 public class SeatingController {
 
     public static Node currentlySelected;
+
     @FXML
     public Button seatingBtn;
     public GridPane gridpane;
 
     public SeatingController() {
         if (currentlySelected == null) currentlySelected = seatBtns[0][0];
+
     }
     @FXML
-    protected static void onSeatClick(ActionEvent e) throws Exception {
+    protected static void onSeatClick(ActionEvent e, int finalRow, int finalCol) throws Exception {
         currentlySelected = (Node) e.getSource();
+        currentlySelected.setAccessibleText(finalRow + " " + finalCol);
+
+
     }
 
     @FXML

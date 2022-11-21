@@ -1,5 +1,6 @@
 package de.medieninformatik.client;
 
+import de.medieninformatik.common.Seat;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -14,6 +15,15 @@ import java.util.ArrayList;
 public class SeatingReservation extends Application {
     public static Scene scene;
     public static Node[][] seatBtns = new Node[10][20];
+    ReservierungClient reservierungClient;
+
+    {
+        try {
+            reservierungClient = new ReservierungClient();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -28,9 +38,12 @@ public class SeatingReservation extends Application {
             for (int col = 0; col < 20; col++) {
                 Button button = new Button();
                 button.getStyleClass().add("seat");
+                int finalRow = row;
+                int finalCol = col;
+                reservierungClient.getLastName(finalRow, finalCol);
                 button.setOnAction(event -> {
                     try {
-                        SeatingController.onSeatClick(event);
+                       SeatingController.onSeatClick(event, finalRow, finalCol);
                     } catch (Exception e) {
                         throw new RuntimeException(e);
                     }

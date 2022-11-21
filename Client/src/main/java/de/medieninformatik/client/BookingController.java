@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.rmi.RemoteException;
+
 import static de.medieninformatik.client.SeatingController.currentlySelected;
 
 public class BookingController {
@@ -39,10 +41,22 @@ public class BookingController {
         }
         String v = firstNameInput.getText();
         String l = lastNameInput.getText();
+        String[] numbers = currentlySelected.getAccessibleText().split(" ");
+        int row = Integer.parseInt(numbers[0]);
+        int col = Integer.parseInt(numbers[1]);
+        try {
+            if (!reservierung.isReserved(row, col)) {
+                reservierung.addReservation(row, col, v, l); // TODO: Fehlermeldung einfügen!
+                System.out.println("bereits Reserviert");
+            }
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
 
-        Seat bookedSeat = reservierung.reservierung()
 
-        System.out.println("BookingController: bookSeat() -> Seat booked :" + v + " " + l);
+        //Seat bookedSeat = reservierung.reservierung()
+
+        System.out.println("BookingController: bookSeat() -> Seat booked :" + v + " " + l + " Seat: " + currentlySelected.getAccessibleText());
     }
 
     @FXML

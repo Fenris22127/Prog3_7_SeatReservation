@@ -27,3 +27,8 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+application {
+    mainClassName = 'de.medieninformatik.server.Main'
+    mainModule = 'de.medieninformatik.server'
+}
